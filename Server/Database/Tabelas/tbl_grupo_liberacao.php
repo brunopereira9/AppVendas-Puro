@@ -5,6 +5,7 @@ $sql = "CREATE TABLE IF NOT EXISTS tbl_grupo_liberacao
             (
               id INT(10) UNSIGNED AUTO_INCREMENT,
               id_empresa INT(10) NOT NULL,
+              acesso_descricao VARCHAR(100) NOT NULL,
               acesso_adm VARCHAR(1) DEFAULT 'N' NOT NULL,
               libera_cadastrar_pessoa VARCHAR(1) DEFAULT 'N' NOT NULL,
               libera_editar_pessoa VARCHAR(1) DEFAULT 'N' NOT NULL,

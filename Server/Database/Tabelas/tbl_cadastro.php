@@ -31,7 +31,9 @@
               cadastro_usuario VARCHAR(200),
               cadastro_usuario_id INT(10),
               observacao VARCHAR(1000),
-              PRIMARY KEY (id)
+              PRIMARY KEY (id),
+              CONSTRAINT fk_id_empresa_cadastro FOREIGN KEY (id_empresa) REFERENCES tbl_empresa (id),
+              CONSTRAINT fk_id_municipio_cadastro FOREIGN KEY (endereco_municipio_cod) REFERENCES tbl_municipio (codigo_municipio),
             )";
 
     // use exec() because no results are returned

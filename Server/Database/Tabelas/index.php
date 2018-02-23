@@ -5,6 +5,7 @@
     include ('tbl_grupo_liberacao.php');
     include ('tbl_usuario.php');
     include ('tbl_municipio.php');
+    include ('tbl_produtos.php');
 
 
     echo 'Tabelas Atualizadas';
