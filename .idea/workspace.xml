@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab531659-86fe-4113-b079-482f61f29f81" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Client/global.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Client/index.html" afterPath="$PROJECT_DIR$/Client/index.html" />
-      <change beforePath="$PROJECT_DIR$/Client/login.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Client/pages/membro/cadastro.html" afterPath="$PROJECT_DIR$/Client/pages/membro/cadastro.html" />
-      <change beforePath="$PROJECT_DIR$/Client/pages/membro/limpo.html" afterPath="$PROJECT_DIR$/Client/pages/membro/limpo.html" />
-      <change beforePath="$PROJECT_DIR$/Client/pages/principal.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Server/Login/index.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -286,12 +279,20 @@
       <workItem from="1519243254627" duration="3180000" />
       <workItem from="1519249527570" duration="1660000" />
       <workItem from="1519405107620" duration="31000" />
-      <workItem from="1519592139547" duration="3983000" />
+      <workItem from="1519592139547" duration="4017000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajuste login">
+      <created>1519596170338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519596170338</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51126000" />
+    <option name="totallyTimeSpent" value="51160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -323,6 +324,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajuste login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
