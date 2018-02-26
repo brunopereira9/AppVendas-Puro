@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab531659-86fe-4113-b079-482f61f29f81" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Server/Class/Usuario.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Server/Database/ConectaDB.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/155eb5aa-81f5-4d30-bd23-eae253cb0b6c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/155eb5aa-81f5-4d30-bd23-eae253cb0b6c.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Dados/Data-1.php" afterPath="$PROJECT_DIR$/Server/Database/Dados/Data-1.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/index.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/index.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_cadastro.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_cadastro.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_empresa.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_empresa.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_grupo_liberacao.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_grupo_liberacao.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_municipio.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_municipio.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_produtos.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_produtos.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_usuario.php" afterPath="$PROJECT_DIR$/Server/Database/Tabelas/tbl_usuario.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/index.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Server/Login/login.php" afterPath="$PROJECT_DIR$/Server/Login/login.php" />
-      <change beforePath="$PROJECT_DIR$/Server/Login/logout.php" afterPath="$PROJECT_DIR$/Server/Login/logout.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -439,11 +425,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519596336404</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajuste usuario">
+      <created>1519610946825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519610946825</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62290000" />
+    <option name="totallyTimeSpent" value="62407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
@@ -489,7 +482,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajuste login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajuste login" />
+    <MESSAGE value="Ajuste usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
