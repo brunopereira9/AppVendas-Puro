@@ -38,9 +38,8 @@ Class ConectaDB{
     public function fazSelect($sql,$array_obj){
         $data = new ConectaDB();
         $arrayReturn = $data->conectaDb();
-        $result = $arrayReturn['result'];
 
-        if ($result == true){
+        if ($arrayReturn['result'] == true){
             $data = $arrayReturn['data'];
             $data->query($sql);
             if ($array_obj == 'obj') {
@@ -58,9 +57,8 @@ Class ConectaDB{
     public function execQuery($sql){
         $data = new ConectaDB();
         $arrayReturn = $data->conectaDb();
-        $result = $arrayReturn['result'];
 
-        if ($result == true){
+        if ($arrayReturn['result'] == true){
             $data = $arrayReturn['data'];
             $query = $data->prepare($sql);
             try{
