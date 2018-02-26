@@ -20,28 +20,66 @@ Class ConectaDB{
             $pdo = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username, $this->password);
             // set the PDO error mode to exception
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $pdo;
+            return array(
+                'result' => true,
+                'data' => $pdo,
+                'getMessage' => 'Ok'
+            );
         }
         catch(PDOException $e)
         {
-            return false;
+            return array(
+                'result' => false,
+                'getMessage' => $e->getMessage()
+            );
         }
     }
 
-    public function fazSelect($sql,$status,$array_obj){
-        $db = new ConectaDB();
-        $db = $db->conectaDb();
-        if ($db != false){
-            $db->query($sql);
-            if ($array_obj == 'obj') {
+    public function fazSelect($sql,$array_obj){
+        $data = new ConectaDB();
+        $arrayReturn = $data->conectaDb();
+        $result = $arrayReturn['result'];
 
-                return $db->fetch(PDO::FETCH_OBJ);
+        if ($result == true){
+            $data = $arrayReturn['data'];
+            $data->query($sql);
+            if ($array_obj == 'obj') {
+                $arrayReturn['data'] = $data->fetch(PDO::FETCH_OBJ);
+                return $arrayReturn;
 
             }else if ($array_obj == 'array'){
-                return $db->fetch(PDO::FETCH_ASSOC);
+                $arrayReturn['data'] = $data->fetch(PDO::FETCH_ASSOC);
+                return $arrayReturn;
             }
         }else{
-            return $status;
+            return $arrayReturn;
         }
     }
+    public function execQuery($sql){
+        $data = new ConectaDB();
+        $arrayReturn = $data->conectaDb();
+        $result = $arrayReturn['result'];
+
+        if ($result == true){
+            $data = $arrayReturn['data'];
+            $query = $data->prepare($sql);
+            try{
+                $data->beginTransaction();
+                $query->execute();
+                $data->commit();
+                $arrayReturn['data'] = $data->lastInsertId();
+                return $arrayReturn;
+
+            }catch (PDOExecption $e){
+                $data->rollBack();
+                $arrayReturn['result'] = false;
+                $arrayReturn['getMessage'] = $e->getMessage();
+                return $arrayReturn;
+            }
+        }else{
+            return $arrayReturn;
+        }
+    }
+
+
 }
