@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab531659-86fe-4113-b079-482f61f29f81" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Server/Database/ConectaDB.php" afterPath="$PROJECT_DIR$/Server/Database/ConectaDB.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +44,7 @@
       <file leaf-file-name="ConectaDB.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/Database/ConectaDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
+            <state relative-caret-position="51">
               <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
               <folding />
             </state>
@@ -1152,11 +1151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519667410359</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajuste usuario">
+      <created>1519667501251</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1519667501251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67376000" />
+    <option name="totallyTimeSpent" value="67422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1476,7 +1482,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/Database/ConectaDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="51">
           <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
           <folding />
         </state>
