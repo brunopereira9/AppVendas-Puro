@@ -1,6 +1,7 @@
 <?php
-    include_once ('../index.php');
+    include_once('../ConectaDB.php');
     include_once ('../criptografia.php');
+    $db = new ConectaDB();
 
     $nome_completo          = "'GILBERTO BRUNO DA CRUZ PEREIRA'";
     $nome_fantasia          = "'BRUNO PEREIRA'";
@@ -115,6 +116,7 @@
                                         $visualiza_venda_propia,
                                         $libera_venda_edita,
                                         $libera_venda_cancela)";
+
         $db->exec($sql);
     }
 

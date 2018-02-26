@@ -1,5 +1,5 @@
 <?php
-    include_once ('../index.php');
+    include_once('../ConectaDB.php');
 
     $sql = "CREATE TABLE IF NOT EXISTS tbl_cadastro
             (
@@ -36,7 +36,8 @@
               CONSTRAINT fk_id_municipio_cadastro FOREIGN KEY (endereco_municipio_cod) REFERENCES tbl_municipio (codigo_municipio),
             )";
 
-    // use exec() because no results are returned
+    $db = new ConectaDB();
+    $db = $db->conectaDb();
     $db->exec($sql);
 
 ?>

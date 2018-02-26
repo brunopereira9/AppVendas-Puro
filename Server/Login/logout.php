@@ -1,5 +1,5 @@
 <?php
-include_once('../Database/index.php');
+include_once('../Database/ConectaDB.php');
 include_once('../Database/criptografia.php');
 
 @session_start();

@@ -1,5 +1,5 @@
 <?php
-    include_once ('../index.php');
+    include_once('../ConectaDB.php');
 
     $sql = "CREATE TABLE IF NOT EXISTS tbl_produtos
             (
@@ -33,6 +33,7 @@
             )";
 
     // use exec() because no results are returned
+    $db = new ConectaDB();
     $db->exec($sql);
 
 ?>

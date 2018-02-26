@@ -1,5 +1,5 @@
 <?php
-    include_once('../index.php');
+    include_once('../ConectaDB.php');
 
     $sql = "CREATE TABLE IF NOT EXISTS tbl_municipio
               (
@@ -11,6 +11,8 @@
               )";
 
     // use exec() because no results are returned
+    $db = new ConectaDB();
+    $db = $db->conectaDb();
     $db->exec($sql);
 
     $query = $db->query("SELECT count(id) as contagem_id FROM tbl_municipio");
@@ -5583,5 +5585,6 @@
             INSERT INTO tbl_municipio (codigo_municipio, nome_municipio, uf_municipio) VALUES (1505106, 'ÓBIDOS', 'PA');
             INSERT INTO tbl_municipio (codigo_municipio, nome_municipio, uf_municipio) VALUES (3533809, 'ÓLEO', 'SP');
         ";
+
         $db->exec($sql);
     }
