@@ -54,7 +54,7 @@ Class ConectaDB{
             return $arrayReturn;
         }
     }
-    public function execQuery($sql){
+    public function execInsert($sql){
         $data = new ConectaDB();
         $arrayReturn = $data->conectaDb();
 
