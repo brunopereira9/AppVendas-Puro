@@ -1,22 +1,17 @@
 <?php
     include_once('../ConectaDB.php');
-
-    $sql = "CREATE TABLE IF NOT EXISTS tbl_municipio
-              (
-                id INT(10) UNSIGNED AUTO_INCREMENT,
-                nome_municipio VARCHAR(200) NOT NULL,
-                codigo_municipio VARCHAR(20) NOT NULL,
-                uf_municipio VARCHAR(20) NOT NULL,
-                PRIMARY KEY (id)
-              )";
-
-    // use exec() because no results are returned
     $db = new ConectaDB();
-    $db = $db->conectaDb();
-    $db->exec($sql);
+    $nomeTabela = "tbl_municipio";
+    $camposTabela = "id INT(10) UNSIGNED AUTO_INCREMENT,
+                     nome_municipio VARCHAR(200) NOT NULL,
+                     codigo_municipio VARCHAR(20) NOT NULL,
+                     uf_municipio VARCHAR(20) NOT NULL,
+                     PRIMARY KEY (id)";
 
-    $query = $db->query("SELECT count(id) as contagem_id FROM tbl_municipio");
-    $result = $query->fetch(PDO::FETCH_OBJ);
+    $arrayResult = $db->criaTabela($nomeTabela,$camposTabela);
+    $sql = "SELECT count(id) as contagem_id FROM tbl_municipio";
+    $result = $db->fazSelect($sql,'obj');
+    $result = $result['data'];
 
     if ($result->contagem_id == 0) {
         $sql = "
@@ -5586,5 +5581,5 @@
             INSERT INTO tbl_municipio (codigo_municipio, nome_municipio, uf_municipio) VALUES (3533809, 'ÓLEO', 'SP');
         ";
 
-        $db->exec($sql);
+        $result = $db->execInsert($sql);
     }
